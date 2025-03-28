@@ -1,0 +1,261 @@
+.flight-interface {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.top-btn {
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.top-btn.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.plus-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.main-content {
+  min-height: 200px;
+}
+
+.text-mode {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.oval {
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 120px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.visual-mode {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.altitude-scale {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scale {
+  position: relative;
+  height: 200px;
+  width: 30px;
+  background: linear-gradient(to bottom, #e0e0e0, #ffffff);
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.scale span {
+  font-size: 12px;
+  position: absolute;
+  left: 40px;
+}
+
+.scale span:nth-child(1) { top: 0; }
+.scale span:nth-child(2) { top: 66px; }
+.scale span:nth-child(3) { top: 132px; }
+.scale span:nth-child(4) { bottom: 0; }
+
+.altitude-marker {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background-color: red;
+  left: -5px;
+  transition: bottom 0.3s;
+}
+
+.heading-indicator {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.angle {
+  position: absolute;
+  font-size: 12px;
+}
+
+.angle.top { top: -20px; }
+.angle.right { right: -20px; }
+.angle.bottom { bottom: -20px; }
+.angle.left { left: -20px; }
+
+.attitude-indicator {
+  display: flex;
+  justify-content: center;
+}
+
+.attitude-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.horizon {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  transition: top 0.3s;
+}
+
+.sky {
+  width: 100%;
+  height: 50%;
+  background-color: #87ceeb;
+}
+
+.ground {
+  width: 100%;
+  height: 50%;
+  background-color: #8b4513;
+}
+
+.aircraft-marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: yellow;
+  border: 1px solid #000;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-section-wrapper {
+  margin-top: 20px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 14px;
+}
+
+.send-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.items-list {
+  margin-top: 20px;
+}
+
+.items-list h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.items-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.items-list li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.items-list p {
+  font-size: 14px;
+  color: #666;
+}
